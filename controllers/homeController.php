@@ -3,11 +3,11 @@ class homeController extends controller{
 
 	public function index(){
 
-		$anuncios = new anuncios();
+		/*$anuncios = new anuncios();
 		$dados['anuncios'] = $anuncios->getAnuncios();
 
 		$banner = new banner();
-		$dados['banners'] = $banner->getBanners();
+		$dados['banners'] = $banner->getBanners();*/
 
 		$this->loadTemplate('home', $dados);
 
