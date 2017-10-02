@@ -14,7 +14,7 @@
 		  <div class="container">
 		    <h1>Header</h1>
 
-			<a class="btn btn-default" href="">Gerenciar Blog</a>
+			<a class="btn btn-default" href="<?= BASE_URL; ?>/login/login">Gerenciar Blog</a>
 
 		  </div><!-- /.container -->
 		</nav>

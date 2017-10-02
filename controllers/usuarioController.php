@@ -62,13 +62,13 @@ class usuarioController extends controller{
 	}
 
 	public function efetuarLogin(){
-		$dados=$_POST;
+		$dados = $_POST;
 		$usuario = new usuario();
-		$verificaLogin=$usuario->getUsuarios($dados['email'],$dados['senha']);
+		$verificaLogin = $usuario->getUsuarios($dados['email'],$dados['senha']);
 		if($verificaLogin==true)
 		{
-			$_SESSION['logado']=true;
-			$_SESSION['email']=$dados['email'];
+			$_SESSION['logado'] = true;
+			$_SESSION['email'] = $dados['email'];
 			// talvez fazer um outro sql no model e chamar aqui para pegar o nome
 			echo"<script language='javascript' type='text/javascript'>alert('logou');window.location.href='".BASE_URL."';</script>";
 			header('Location:'.BASE_URL);
@@ -76,7 +76,9 @@ class usuarioController extends controller{
 		}
 		else
 		{
-			// Lembrar de redirecionar o usuario com a mensagem de erro
+			echo"<script language='javascript' type='text/javascript'>alert('não logou');window.location.href='".BASE_URL."';</script>";
+			header('Location:'.BASE_URL);
+			exit();
 		}
 	}
 

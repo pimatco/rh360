@@ -5,10 +5,10 @@
 		}
 
 		public function efetuarLogin(){
-			$dados=$_POST;
+			$dados = $_POST;
 			$usuario = new $usuario();
-			$verificaLogin=$usuario->getUsuarios($dados['email'],$dados['senha']);
-			if($verificaLogin==true)
+			$verificaLogin = $usuario->getUsuarios($dados['email'],$dados['senha']);
+			if($verificaLogin == true)
 			{
 				$_SESSION['logado']=true;
 				$_SESSION['email']=$dados['email'];
