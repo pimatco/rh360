@@ -1,4 +1,4 @@
-<form class="form-horizontal" action="<?= BASE_URL; ?>/blogpost/salva_blog_post" method="post">
+<form class="form-horizontal" action="<?= BASE_URL; ?>/blogpost/blogpost/adicionar_blog_post" method="post">
 	<div class="form-group">
 		<label class="col-lg-2 control-label">Título</label>
 		<div class="col-lg-10">
