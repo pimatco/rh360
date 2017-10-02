@@ -6,7 +6,7 @@
 
 		public function efetuarLogin(){
 			$dados = $_POST;
-			$usuario = new $usuario();
+			$usuario = new usuario();
 			$verificaLogin = $usuario->getUsuarios($dados['email'],$dados['senha']);
 			if($verificaLogin == true)
 			{
@@ -14,8 +14,8 @@
 				$_SESSION['email']=$dados['email'];
 				// talvez fazer um outro sql no model e chamar aqui para pegar o nome
 				echo "está funcionando";
-				header('Location:'.BASE_URL);
-				exit();
+				header('Location:' . BASE_URL);
+				exit;
 			}
 			else
 			{
