@@ -1,0 +1,102 @@
+/*Modificações*/
+
+/*formilário da primeira section*/
+#head{
+	width:100%;
+	border: solid 1px rgba(160, 160, 160, 0.3); 
+	background-color: white;
+    padding: 20px;
+    margin-left: 0px;
+}
+
+#formlead{			
+	padding-top: 30px !important;
+}
+ 
+input{
+	border-radius: 5px !important;
+	background-color:rgb(240, 242, 244) !important;
+} 
+
+#formlead > button{
+	margin-left:-8px;
+	height: 2.75em;
+	background-color:rgb(70, 204, 110);
+	color:white !important;
+}
+
+@media(min-width: 768px){
+    #formlead > button{
+    border-radius: 0 5px 5px 0 !important;
+    }
+}
+@media(min-width: 760px){
+    #formlead > button{
+    margin-left: 25px;
+    }
+}
+
+#p1{
+	color:rgb(155,177,207);
+    margin-bottom: 0px;
+}
+#p2{
+	color:rgb(78,94,107);
+	font-weight:800;
+    margin-bottom: 0px;
+}
+/*titulo*/
+#titulo-principal{
+	font-size: 200%;
+	position: absolute;
+	top: 2%;
+    text-align: center;
+	width:100%;
+}
+#logo{
+	color: #2a32a2;	
+}
+/*Banner principal*/
+
+html, body{
+    height: 100%;
+}
+
+.TopCasaFina-banner{
+    text-align: center;
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 20px;
+    width: 20em;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    transition: .4s;
+    padding-top: 45px;
+}
+.data-postagem{
+    color: black;
+}
+iframe{
+    border-width: 0px;
+}
+#inicial{
+    background-image: url(../../images/bg-blog.png);
+    height: 100%;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+@media(min-width: 768px){
+    #paineis-sobre{
+    margin-top: 0px;
+    }
+    .TopCasaFina-banner{
+        font-size: 130%;
+        width: 28em;
+        height: 12em;
+    }
+
+}
